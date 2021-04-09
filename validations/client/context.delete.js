@@ -1,8 +1,8 @@
 // @ts-check
 /** @type { import("./validation").validation } */
 module.exports = joi => ({
-    deleteContexts: () => ({
-        description: 'Delete contexts',
+    'context.delete': () => ({
+        description: 'Delete context',
         params: joi.object().keys({
             url: joi.string(),
             method: joi.string().valid('DELETE'),

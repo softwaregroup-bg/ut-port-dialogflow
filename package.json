@@ -4,8 +4,7 @@
     "main": "index.js",
     "dependencies": {
         "google-auth-library": "3.0.1",
-        "joi": "13.7.0",
-        "ut-port-webhook": "^7.0.0"
+        "ut-port-webhook": "^8.0.0"
     },
     "devDependencies": {
         "sort-keys": "2.0.0",

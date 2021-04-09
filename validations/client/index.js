@@ -1,17 +1,17 @@
-module.exports = {
-    'intent.detect': () => require('./intent/detect'),
-    deleteContexts: () => require('./deleteContexts'),
-    'context.create': () => require('./context/create'),
-    'context.delete': () => require('./context/delete'),
-    'context.get': () => require('./context/get'),
-    'context.list': () => require('./context/list'),
-    'context.patch': () => require('./context/patch'),
-    'entityType.batchDelete': () => require('./entityType/batchDelete'),
-    'entityType.batchUpdate': () => require('./entityType/batchUpdate'),
-    'entityType.create': () => require('./entityType/create'),
-    'entityType.delete': () => require('./entityType/delete'),
-    'entityType.get': () => require('./entityType/get'),
-    'entityType.list': () => require('./entityType/list'),
-    'entityType.patch': () => require('./entityType/patch')
-
-};
+module.exports = joi => Object.assign(
+    {},
+    require('./context.create')(joi),
+    require('./context.delete')(joi),
+    require('./context.get')(joi),
+    require('./context.list')(joi),
+    require('./context.patch')(joi),
+    require('./deleteContexts')(joi),
+    require('./entityType.batchDelete')(joi),
+    require('./entityType.batchUpdate')(joi),
+    require('./entityType.create')(joi),
+    require('./entityType.delete')(joi),
+    require('./entityType.get')(joi),
+    require('./entityType.list')(joi),
+    require('./entityType.patch')(joi),
+    require('./intent.detect')(joi)
+);

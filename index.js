@@ -2,7 +2,7 @@ const authClientFactory = require('./authClientFactory');
 const getAuthHeader = async auth => 'Bearer ' + (await authClientFactory(auth).getAccessToken()).token;
 const errors = require('./errors');
 module.exports = function dialogflow(...params) {
-    const {registerErrors} = params[0];
+    const {registerErrors, joi} = params[0];
     return class dialogflow extends require('ut-port-webhook')(...params) {
         get defaults() {
             return {
@@ -14,7 +14,7 @@ module.exports = function dialogflow(...params) {
                 },
                 namespace: 'dialogflow',
                 hook: 'dialogflowIn',
-                validations: require('./validations')
+                validations: require('./validations')(joi)
             };
         }
 

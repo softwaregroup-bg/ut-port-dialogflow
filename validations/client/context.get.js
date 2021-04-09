@@ -1,11 +1,11 @@
 // @ts-check
 /** @type { import("./validation").validation } */
 module.exports = joi => ({
-    deleteContexts: () => ({
-        description: 'Delete contexts',
+    'context.get': () => ({
+        description: 'Get context',
         params: joi.object().keys({
             url: joi.string(),
-            method: joi.string().valid('DELETE'),
+            method: joi.string().valid('GET'),
             headers: joi.object().keys({
                 Authorization: joi.string()
             })
