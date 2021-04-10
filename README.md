@@ -9,7 +9,7 @@ Use the screenshots below to define the following parameters:
 * `auth` - Private key in JSON format.
 
 The configuration path is `utNlp.dialogflow.standard.agents`
-If you need to configura multiple agents via configuration
+If you need to configure multiple agents via configuration
 just provide an array of objects containing the properties
 described above.
 
@@ -40,7 +40,7 @@ The dialog consists of main intent and 3 follow-ups:
   completed successfully.
 
 Fow consistency, it is good to follow this or similar naming
-convention for all dialogs, that involve back-end acitons.
+convention for all dialogs, that involve back-end actions.
 Here is how these intents should look like in the list of
 intents:
 
