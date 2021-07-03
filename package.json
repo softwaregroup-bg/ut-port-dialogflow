@@ -4,7 +4,7 @@
     "main": "index.js",
     "dependencies": {
         "google-auth-library": "3.0.1",
-        "ut-port-webhook": "^8.1.0"
+        "ut-port-webhook": "^8.1.1"
     },
     "devDependencies": {
         "tap": "^12.5.3",
