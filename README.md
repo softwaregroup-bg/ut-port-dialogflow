@@ -13,7 +13,7 @@ If you need to configure multiple agents via configuration
 just provide an array of objects containing the properties
 described above.
 
-Use [this](https://dialogflow.com/docs/reference/v2-auth-setup) guide
+Use [this](https://cloud.google.com/dialogflow/es/docs/quick/setup#sa-create) guide
 to see how to create a Service Account and obtain a private key.
 
 ![alt](doc/dialogFlowProjectAdmin.png)
