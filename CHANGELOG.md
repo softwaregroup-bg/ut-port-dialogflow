@@ -1,3 +1,12 @@
+## [7.2.5](https://github.com/softwaregroup-bg/ut-port-dialogflow/compare/v7.2.4...v7.2.5) (2022-02-08)
+
+
+### Bug Fixes
+
+* hide header from logs ([b1cfaad](https://github.com/softwaregroup-bg/ut-port-dialogflow/commit/b1cfaad14709b9f0e1a458d7f314aaa82860bad4))
+
+
+
 ## [7.2.4](https://github.com/softwaregroup-bg/ut-port-dialogflow/compare/v7.2.3...v7.2.4) (2021-07-03)
 
 
