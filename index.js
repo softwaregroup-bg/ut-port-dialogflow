@@ -9,6 +9,11 @@ module.exports = function dialogflow(...params) {
                 path: '/dialogflow/{appId}/{clientId}',
                 mode: 'reply',
                 async: 'client',
+                log: {
+                    transform: {
+                        Authorization: 'hide'
+                    }
+                },
                 server: {
                     port: 8084
                 },
