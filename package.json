@@ -7,8 +7,8 @@
         "ut-port-webhook": "^8.1.1"
     },
     "devDependencies": {
-        "tap": "^12.5.3",
-        "ut-tools": "^6.37.0"
+        "tap": "^15.1.6",
+        "ut-tools": "^6.40.1"
     },
     "peerDependencies": {
         "ut-run": "^10.52.0"
