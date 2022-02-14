@@ -419,6 +419,46 @@ module.exports = function dialogflow(...params) {
                 },
                 [`${namespace}.entityType.patch.response.receive`]: msg => {
                     return msg;
+                },
+                [`${namespace}.intent.list.request.send`]: async({
+                    intent: {
+                        agentId
+                    },
+                    paging: {
+                        pageNumber,
+                        pageSize
+                    } = {pageNumber: 1, pageSize: 10},
+                    pageToken
+                }, {auth}) => {
+                    return {
+                        url: `https://dialogflow.googleapis.com/v2/projects/${auth.appId}/agent/intents`,
+                        method: 'GET',
+                        qs: {
+                            pageSize,
+                            pageToken
+                            // languageCode
+                        },
+                        headers: {
+                            Authorization: await getAuthHeader(auth)
+                        }
+                    };
+                },
+                [`${namespace}.intent.list.response.receive`]: msg => {
+                    return msg;
+                },
+                [`${namespace}.intent.get.request.send`]: async({
+                    intentId
+                }, {auth}) => {
+                    return {
+                        url: `https://dialogflow.googleapis.com/v2/${intentId}`,
+                        method: 'GET',
+                        headers: {
+                            Authorization: await getAuthHeader(auth)
+                        }
+                    };
+                },
+                [`${namespace}.intent.list.response.receive`]: msg => {
+                    return msg;
                 }
             };
         }
