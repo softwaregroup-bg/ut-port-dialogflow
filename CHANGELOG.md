@@ -1,3 +1,12 @@
+## [7.2.7](https://github.com/softwaregroup-bg/ut-port-dialogflow/compare/v7.2.6...v7.2.7) (2022-03-23)
+
+
+### Bug Fixes
+
+* CVE-2020-8237 ([f7e3b56](https://github.com/softwaregroup-bg/ut-port-dialogflow/commit/f7e3b56fe3b2d7556900e5b756b2900a65b6a651))
+
+
+
 ## [7.2.6](https://github.com/softwaregroup-bg/ut-port-dialogflow/compare/v7.2.5...v7.2.6) (2022-03-13)
 
 

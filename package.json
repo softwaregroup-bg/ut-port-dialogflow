@@ -1,6 +1,6 @@
 {
     "name": "ut-port-dialogflow",
-    "version": "7.2.6",
+    "version": "7.2.7",
     "main": "index.js",
     "dependencies": {
         "google-auth-library": "^7.14.0",
